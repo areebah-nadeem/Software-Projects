@@ -1,0 +1,11 @@
+C:\Users\areeb\Comp123\AccountApp\AccountApp\obj\Debug\AccountApp.csproj.AssemblyReference.cache
+C:\Users\areeb\Comp123\AccountApp\AccountApp\obj\Debug\AccountApp.csproj.SuggestedBindingRedirects.cache
+C:\Users\areeb\Comp123\AccountApp\AccountApp\obj\Debug\AccountApp.frmAccounts.resources
+C:\Users\areeb\Comp123\AccountApp\AccountApp\obj\Debug\AccountApp.Properties.Resources.resources
+C:\Users\areeb\Comp123\AccountApp\AccountApp\obj\Debug\AccountApp.csproj.GenerateResource.cache
+C:\Users\areeb\Comp123\AccountApp\AccountApp\obj\Debug\AccountApp.csproj.CoreCompileInputs.cache
+C:\Users\areeb\Comp123\AccountApp\AccountApp\bin\Debug\AccountApp.exe.config
+C:\Users\areeb\Comp123\AccountApp\AccountApp\bin\Debug\AccountApp.exe
+C:\Users\areeb\Comp123\AccountApp\AccountApp\bin\Debug\AccountApp.pdb
+C:\Users\areeb\Comp123\AccountApp\AccountApp\obj\Debug\AccountApp.exe
+C:\Users\areeb\Comp123\AccountApp\AccountApp\obj\Debug\AccountApp.pdb

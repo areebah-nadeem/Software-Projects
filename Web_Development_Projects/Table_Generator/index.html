@@ -1,0 +1,121 @@
+<!--COMP 125-
+ASSIGNMENT#1 HTML File
+  STUDENT NAME: AREEBAH NADEEM
+STUDENT ID: 301283959
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <!--externel css link-->
+    <link rel="stylesheet" href="style.css">
+        <!--externel javascript link-->
+        <script src="JavaScript.js"></script>
+
+    <title>Assignment 1</title>
+</head>
+
+<body>
+
+   
+
+    <div id="top">
+
+        <!--navigation bar-->
+        <nav class="navigation"  style="width:100%;display: flexbox;">
+            <h2>Areebah's Table Generator</h2>
+
+            <strong>
+                <a class="button" href="#">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;HOME
+                    &nbsp;</a>
+                <a class="button" href="#call"> &nbsp;&nbsp;&nbsp; CONTACT</a>
+            </strong>
+        </nav>
+
+    </div>
+
+    <div class="topimage" style="width:100%;display: flexbox;">
+        <img height="430rem" width="100%" 
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJdfzyF16uZTpNUtEF0QYuYjsJfa9wXv4Uww&usqp=CAU"></img>
+    </div>
+
+
+    <div class="box-container">
+        <!--box 1-->
+
+        <div class="box">
+            <div id="myinput" style="margin:auto; width:80%; padding: 10px;">
+                <br><br>
+                <!--TAKING INPUT FROM USER : ROW -->
+                <label for="ROW"> Enter Rows</label>
+                <br>
+                <input type="number" id="ROW">
+                <br>
+                <br>
+                <!--TAKING INPUT FROM USER : COLOUMN -->
+                <label for="COLUMN">Enter Columns</label>
+                <br>
+
+                <input type="number" id="COLUMN">
+                <br>
+
+            </div>
+
+            <div id="submit">
+                <!--CREATING BUTTON TO TRIGGER FUNCTION TO CREATE TABLE WITH THE EVENT OF ONCLICK -->
+                <input class="button " type="button" value="Draw Table" onClick="DrawMyMatrixTable();" />
+            </div>
+
+            <br><br>
+
+
+            <!--MAKING SPACE FOR DRAWING MY MATIX TABLE-->
+            <div id="myTable"></div>
+        </div>
+
+        <div id="call" style="width:100%;">
+            <footer> <small>
+                    <cite>
+                        <br>
+                        <class id="Aboutme">
+                            <p><b>About me: </b> <br><br>
+                                Student Name: Areebah Nadeem<br> Student Number: 301283959<br> For more information <a
+                                    class="relatedlinks" href="mailto:areebah_nadeem@live.com">email me</a><br><br><br>
+                                References</b><br><a
+                                    href="#">None
+                                </a>
+
+                                <a href="#"> </a>
+                                <br><br><br>
+                                <i>Copyright &copy; Areebah Nadeem - COMP 125 - Winter 2023</i>
+
+
+                            </p>
+                        </class>
+
+
+                        <br><br><br>
+
+
+                    </cite>
+
+
+
+
+            </footer>
+            </small>
+        </div>
+
+       
+
+</body>
+
+</html>

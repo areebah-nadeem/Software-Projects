@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ASSIGNMENT 3</title>
+  <style>
+    body {
+    /* background-image: url("body.png");*/
+        padding: 350px;
+      display: flex;
+      background-color: grey;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100px;
+      margin: 0;
+    }
+    #playagain,
+    #scoreButton,
+    #speedButton {
+      background-color:rgba(green,0.5);
+      color: black;
+      border: 2px solid darkred;
+      width: 100px;
+      height: 40px;
+    }
+
+  
+
+    #playagain:hover,
+    #scoreButton:hover,
+    #speedButton:hover {
+      transform: scale(1.5);
+      cursor: pointer;
+      
+    }
+
+    #score {
+      font-size: 20px;
+      color:white;
+    }
+
+    #title {
+      font-size: 40px;
+      color: darkred;
+    }
+
+    footer {
+      margin-top: auto;
+      text-align: center;
+      font-size: 12px;
+      color:white;
+      flex-shrink: 0;
+     
+
+    }
+ 
+  </style>
+</head>
+
+<body>
+
+          <div id="score"></div>
+        <br>
+          <div id="title">Smash The Bug</div>
+        <br>
+        <br>
+      
+        <button id="playagain" onclick="playagain()">Play Again</button>
+        <br>
+          <button id="scoreButton" onclick="resetScore()">Reset Score</button>
+         <br>
+          <button id="speedButton" onclick="resetSpeed()">Reset Speed</button>
+     <br>
+     <!--when i use defer in the statement my footer goes 
+      on the top of canvas that's why i did not use defer here.
+    i have also send you a message on teams regarding :(
+
+    )-->
+
+    
+  <br>
+  <script src="FINALGAME.js" ></script>
+  <br>
+  <footer>&copy; 2023 Areebah Nadeem.</footer>
+
+</body>
+
+</html>
