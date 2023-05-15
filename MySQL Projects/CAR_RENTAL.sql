@@ -1,4 +1,4 @@
--- Question1 Finals 
+
 
 
 --Table 1
@@ -133,9 +133,7 @@ ALTER TABLE reports ADD FOREIGN KEY (Transaction_ID) REFERENCES transaction(Tran
 
 
 
-
---Q2
-
+--DISPLAYING DATA
 
 Select * From driver ;
 
@@ -144,14 +142,13 @@ Select * From customer;
 Select * From rental;
 
 
---question3/4
+--LIST OF CONSTRAINTS USED
 
 SELECT table_name, constraint_name, constraint_type
 FROM user_constraints
 WHERE table_name IN ('CUSTOMER', 'TRANSACTION', 'REPORTS', 'DRIVER', 'RENTAL');
 
-
---question 5
+--JOINING TABLES
 
 SELECT 
 customer.Customer_ID,
