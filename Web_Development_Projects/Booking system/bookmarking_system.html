@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Save your important bookmarks!</h1>
+    <div class="container">
+        <label for="book">Enter your bookmark:</label>
+        <input id="book" name="book" type="url" placeholder="https://example.com"/>
+        <button id="save">Save</button>
+        <h2>Saved Bookmarks</h2>
+        <ul id="bookmarkList">
+            <!-- Bookmarks will be listed here -->
+        </ul>
+    </div>
+
+    <script>
+        document.getElementById("save").addEventListener("click", function(){
+            let bookmarkUrl = document.getElementById("book").value;
+            if (bookmarkUrl) {
+                // Create a new list item
+                let listItem = document.createElement("li");
+                listItem.textContent = bookmarkUrl;
+                
+                // Append the new list item to the bookmark list
+                document.getElementById("bookmarkList").appendChild(listItem);
+
+                // Clear the input field
+                document.getElementById("book").value = '';
+            } else {
+                alert("Please enter a URL.");
+            }
+        });
+    </script>
+</body>
+</html>

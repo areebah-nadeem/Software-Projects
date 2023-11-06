@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        html body {
+            margin: 0;
+            padding: 0;
+        }
+
+        ul{
+            display: flex;
+            margin:0;
+            padding: 15px 0;
+            color: whitesmoke;
+        }
+
+        ul li {
+            list-style:none;
+            margin:0 23px;
+        }
+
+        /* Container holding the image and the text */
+        .contain {
+        position: relative;
+        text-align: center;
+        color: white;
+        }
+
+                /* Centered text */
+        .centered {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: black;
+        font-size: xx-large;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-style: italic;
+        font-weight: bolder;
+        }
+
+      
+
+
+
+
+    </style>
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
+<body>
+    <nav>
+            <ul>
+
+                <li>Home</li>
+                <li>About me</li>
+           
+            </ul>
+        
+    </nav>
+
+<!-- card -->
+<!-- <div class="container"><h1> Joke for today</h1></div> -->
+
+
+   <!-- <div class="container justify-content-center m-auto my-6 jus"><div id="joker"></div></div> -->
+   <div class="contain">
+    <img src="jk.jpg" alt="joke" style="width:100%;">
+
+    <div class="centered">
+    <!-- <h1 id="hid"class="heading" hidden> "Joke for today"</h1> -->
+    <h1 class="heading"> "Joke for today"</h1>
+
+        
+    <div id="joker"></div>
+
+ 
+
+    <button type="button" class="btn btn-warning btn-lg my-6">Try Another Joke</button>
+    </div>
+  </div>
+        
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+<script>  
+
+
+const redbg=()=>{
+    document.body.firstElementChild.style.background="black"
+
+
+}
+let b= document.body
+console.log(b.firstElementChild)
+redbg();
+
+const jokes = [
+    "Why did the tomato turn red? Because it saw the salad dressing!",
+    "Why did the scarecrow win an award? Because he was outstanding in his field!",
+    "Why did the bicycle fall over? Because it was two-tired!",
+    "Why was the math book sad? Because it had too many problems!",
+    "Why did the chicken cross the playground? To get to the other slide!",
+    "Why do seagulls fly over the sea? Because if they flew over the bay, they'd be bagels!",
+    "Why don't scientists trust atoms? Because they make up everything!",
+    "Why don't skeletons fight each other? They don't have the guts!",
+    "Why did the computer go to the doctor? Because it had a virus!",
+    "Why don't eggs tell jokes? Because they'd crack each other up!"
+  ];
+
+
+  
+
+  window.onload = function(e){ 
+
+    
+// let i= Math.floor(Math.random()*10)
+let i= Math.floor(Math.random()*jokes.length-1);
+document.getElementById("joker").innerHTML= jokes[i]
+
+
+  }
+
+document.getElementsByTagName("button")[0].onclick=()=>{
+
+    let i= Math.floor(Math.random()*10)
+    document.getElementById("joker").innerHTML= jokes[i]
+
+        // document.getElementById("hid").hidden= false
+}
+</script>
+</body>
+</html>
